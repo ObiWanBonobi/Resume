@@ -121,16 +121,68 @@ header {
     letter-spacing: 2px;
 }
 
-/* -----------------------------------------------------  Hover.css  --------------------------------------------------- */
+/* ---------------------------------------- ------------  Hover.css  ---------------------- ----------------- */
 .hvr-sweep-to-bottom:before {
     background: rgba(7, 110, 16, 0.267);
     height: 120px;
 }
 
 /* -------------------------------------------------------  Main  ------------------------------------------------------ */
-.main {
-    background-color: rgb(220, 220, 220);
+
+/* --------------------------------------------------  Personal Info  ---------------------------------------- */
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.key {
+    color: #b95c04;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
+}
+
+/* -----------------------------------------------------  About Me  ------------------------------------------ */
+section {
     color: rgb(0, 32, 8);
+}
+
+.personal-info {
+    background-color: rgb(220, 220, 220);
+}
+
+.three-reasons-icon {
+    font-size: 24px;
+    color: #b95c04;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
 }
 
 /* ------------------------------------------------------  Footer  ----------------------------------------------------- */
@@ -149,7 +201,7 @@ footer {
 }
 
 .cv-pdf i:hover {
-    color: rgb(55, 143, 62);
+    color: #b95c04;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -168,7 +220,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    color: rgb(55, 143, 62);
+    color: #b95c04;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -178,6 +230,3 @@ footer {
 #footer-details {
     padding: 20px;
 }
-
-/* -------------------------------------------------  Madia width 435px  ----------------------------------------------- */
-@media screen and (min-width: 642px) {}

@@ -182,7 +182,6 @@ section {
 }
 
 .three-reasons-heading {
-
     margin: 4px 0 15px 0;
 }
 
@@ -252,6 +251,16 @@ section {
 
 .progress-section {
     margin: 40px 20px;
+}
+
+.resume-download {
+    color: inherit;
+    font-size: 180%;
+}
+
+.resume-download i {
+    color: #b95c04;
+    padding-right: 20px;
 }
 
 /* -------------------------------------------------------  Form  ------------------------------------------ */

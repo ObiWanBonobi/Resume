@@ -47,7 +47,7 @@ img {
     max-width: 100%;
 }
 
-/* page structure */
+/* -------------------------------page structure----------------------------- */
 #search-area {
     display: block;
     max-width: 70%;
@@ -74,7 +74,7 @@ img {
     margin: 0 auto;
 }
 
-/* page content styles */
+/* ------------------------------page content styles------------------------------ */
 .small-name {
     font-size: 0.75em;
     color: #a9a9a9;
@@ -148,7 +148,7 @@ img {
     font-size: 0.9em;
 }
 
-/* input field */
+/* -------------------------------------input field------------------------------------- */
 #gh-username {
     display: block;
     padding: 5px 8px;

@@ -263,6 +263,79 @@ section {
     padding-right: 20px;
 }
 
+.resume-download i:hover {
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    color: #9b4d04;
+}
+
+/* ------------------------------------------------------  Github  ----------------------------------------- */
+.small-name a {
+    font-size: 0.75em;
+    color: #b95c04;
+    font-style: italic;
+}
+
+#gh-username {
+    display: block;
+    padding: 5px 8px;
+    font-size: 1.4em;
+    max-width: 550px;
+    margin-bottom: 15px;
+}
+
+.git-followers,
+.git-image {
+    margin: 10px 0 10px 0;
+}
+
+.git-section {
+    margin-bottom: 40px;
+}
+
+.repo-list {
+    display: block;
+    clear: both;
+    width: 100%;
+    font-size: 130%;
+}
+
+.repo-list ul li {
+    display: block;
+}
+
+.repo-list ul li a {
+    padding: 6px 9px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 7px;
+    color: rgb(243, 243, 243);
+    background-color: #b95c04;
+}
+
+.repo-list ul li a:hover {
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    background-color: #9b4d04;
+}
+
+#loader {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
 /* -------------------------------------------------------  Form  ------------------------------------------ */
 .contact-page {
     background-color: rgb(220, 220, 220);
@@ -285,6 +358,7 @@ input {
 }
 
 input[class="form-control"],
+input[id="gh-username"],
 textarea[class="form-control"] {
     color: rgb(0, 32, 8);
 }

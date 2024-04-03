@@ -404,7 +404,7 @@ button[type="submit"]:hover {
 }
 
 
-/* ------------------------------  Footer  ----------------------------- */
+/* -------------------------------  404  ------------------------------- */
 
 .idiot-image {
     max-width: 300px;
@@ -470,10 +470,5 @@ footer {
         min-height: 240px;
         margin: 0 auto;
         max-width: 50%;
-    }
-
-    .personal-info-item .key,
-    .personal-info-item .value {
-        display: inline-block;
     }
 }

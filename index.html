@@ -15,6 +15,8 @@
         type="text/css" />
     <!-- CSS link -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -121,14 +123,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 section-column">
+            <div class="col-md-8 section-column margin-bottom">
                 <div class="row">
                     <div class="col">
                         <h3 class="section-heading uppercase">About Me</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-6 col-md-6">
                         <div class="row">
                             <div class="col-2">
                                 <i class="three-reasons-icon bi bi-question-circle" aria-hidden="true"></i>
@@ -151,7 +153,7 @@
                         </div>
                     </div>
 
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-6 col-md-6">
                         <div class="row">
                             <div class="col-2">
                                 <i class="three-reasons-icon bi bi-lightning" aria-hidden="true"></i>
@@ -180,7 +182,7 @@
         </div>
     </section>
 
-    <footer class="container-fluid fixed-bottom">
+    <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-4">
                 <h5 class="uppercase">About</h5>
@@ -223,6 +225,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- jQuery -->
+    <script>
+        $(document).ready(function() {
+            var alterClass = function() {
+                var ww = document.body.clientWidth;
+                if (ww < 860) {
+                $('footer').removeClass('fixed-bottom');
+                } else if (ww >= 861) {
+                $('footer').addClass('fixed-bottom');
+                };
+            };
+            $(window).resize(function(){
+                alterClass();
+            });
+            alterClass();
+        });
+    </script>
 
 </body>
 

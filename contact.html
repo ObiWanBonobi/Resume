@@ -15,6 +15,8 @@
         type="text/css" />
     <!-- CSS link -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Email link -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -69,7 +71,7 @@
         </div>
     </header>
 
-    <section class="container-fluid contact-page">
+    <section class="container-fluid contact-page margin-bottom">
         <div class="row">
             <div class="col">
                 <h3 class="contact-heading uppercase text-center">Interested in working with this nerdy gamer?</h3>
@@ -92,7 +94,7 @@
         </div>
     </section>
 
-    <footer class="container-fluid fixed-bottom">
+    <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-4">
                 <h5 class="uppercase">About</h5>
@@ -135,6 +137,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- jQuery -->
+    <script>
+        $(document).ready(function() {
+            var alterClass = function() {
+                var ww = document.body.clientWidth;
+                if (ww < 860) {
+                $('footer').removeClass('fixed-bottom');
+                } else if (ww >= 861) {
+                $('footer').addClass('fixed-bottom');
+                };
+            };
+            $(window).resize(function(){
+                alterClass();
+            });
+            alterClass();
+        });
+    </script>
 
     <!-- Javascript -->
     <script src="assets/js/email.js"></script>

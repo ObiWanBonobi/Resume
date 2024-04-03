@@ -15,6 +15,8 @@
         type="text/css" />
     <!-- CSS link -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -61,7 +63,7 @@
             </div>
         </div>
     </header>
-    <div class="text-center m-3">
+    <div class="text-center m-3 margin-bottom">
         <h1>Error 404</h1>
         <h3>Wrong page partner!</h3>
         <a href="index.html">
@@ -112,6 +114,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- jQuery -->
+    <script>
+        $(document).ready(function() {
+            var alterClass = function() {
+                var ww = document.body.clientWidth;
+                if (ww < 860) {
+                $('footer').removeClass('fixed-bottom');
+                } else if (ww >= 861) {
+                $('footer').addClass('fixed-bottom');
+                };
+            };
+            $(window).resize(function(){
+                alterClass();
+            });
+            alterClass();
+        });
+    </script>
 
 </body>
 

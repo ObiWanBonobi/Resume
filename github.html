@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <!-- JQuery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- JavaScript -->
     <script type="text/javascript" src="assets/js/github.js"></script>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -26,7 +27,7 @@
     <title>Github</title>
 </head>
 
-<body>
+<body class="grey-page">
     <header>
         <div class="row g-0">
             <a class="col-md-4 bo-img" href="index.html"></a>
@@ -81,15 +82,15 @@
         </div>
     </section>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid text-center">
         <div id="footer-details" class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <h5 class="uppercase">About</h5>
                 <p class="inline-block">
                     Full Stack Web Developer. Skilled in HTML, CSS, JavaScript, Python and more.
                 </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <h5 class="uppercase">Download</h5>
                 <p class="inline-block">
                     Need a printable version of my CV? Download it here.
@@ -99,33 +100,10 @@
                     </a>
                 </p>
             </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase">Socials</h5>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/bo-de-groot-b43a89270/" target="_blank">
-                            <i class="bi bi-linkedin" aria-hidden="true"></i>
-                            <span class="visually-hidden">LinkIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/ObiWanBonobi" target="_blank">
-                            <i class="bi bi-github" aria-hidden="true"></i>
-                            <span class="visually-hidden">Github</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/bo_de_groot/" target="_blank">
-                            <i class="bi bi-instagram" aria-hidden="true"></i>
-                            <span class="visually-hidden">Instagram</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
+    <!-- jQuery this code is for adding a class to the footer -->
     <script>
         $(document).ready(function() {
             var alterClass = function() {
